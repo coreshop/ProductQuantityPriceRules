@@ -86,7 +86,7 @@ class VolumeCalculator implements CalculatorInterface
      *
      * @return int
      */
-    protected function calculateRangePrice(QuantityRangeInterface $range, QuantityRangePriceAwareInterface $subject, int $originalPrice, array $context)
+    public function calculateRangePrice(QuantityRangeInterface $range, QuantityRangePriceAwareInterface $subject, int $originalPrice, array $context)
     {
         $pricingBehaviour = $range->getPricingBehaviour();
 
